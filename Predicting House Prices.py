@@ -12,7 +12,7 @@ df = pd.read_csv('Housing.csv')
 print("\n Dataset Loaded")
 print(df.head())
 
-print("\n🔍 Checking for null values:")
+print("\n Checking for null values:")
 print(df.isnull().sum())
 
 cat_cols = ['mainroad', 'guestroom', 'basement', 'hotwaterheating',
@@ -35,7 +35,7 @@ y_pred = model.predict(X_test)
 mse = mean_squared_error(y_test, y_pred)
 r2 = r2_score(y_test, y_pred)
 print(f"\n Mean Squared Error: {mse:.2f}")
-print(f"📈 R² Score: {r2:.2f}")
+print(f" R² Score: {r2:.2f}")
 
 plt.figure(figsize=(8,6))
 sns.scatterplot(x=y_test, y=y_pred, color='blue', alpha=0.6)
