@@ -56,7 +56,7 @@ plt.grid(True)
 plt.show()
 
 
-print("\n📊 Cluster Summary:\n")
+print("\n Cluster Summary:\n")
 summary = df.groupby('Cluster')[numeric_df.columns].mean()
 print(summary)
 
